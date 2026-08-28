@@ -7,7 +7,7 @@
     <meta name="description" content="Sirius 0.6 is a private local AI workspace for Apple Silicon, with project threads, memory, browser tools, creative handoffs, and fast MLX inference." />
     <meta property="og:title" content="Sirius Beta // Local AI Workspace" />
     <meta property="og:description" content="Your Mac. Your models. One clear agent." />
-    <meta property="og:image" content="https://tomislavrupic.github.io/Sirius-site/assets/sirius-clean-desktop-beta.jpg" />
+    <meta property="og:image" content="https://tomislavrupic.github.io/Sirius-site/assets/sirius-living-constellation-v1.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://tomislavrupic.github.io/Sirius-site/" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="ambient-field" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Sirius home">
@@ -38,9 +39,10 @@
           </div>
           <div class="trust"><span><b>LOCAL</b> MLX inference</span><span><b>PRIVATE</b> Project-scoped</span><span><b>CONTROL</b> Always optional</span></div>
         </div>
-        <figure class="hero-shot">
-          <img src="assets/sirius-clean-desktop-beta.jpg" alt="Sirius Beta running on a clean macOS Desktop with a local-first release conversation" width="4200" height="2700" />
-          <figcaption>REAL SIRIUS UI // CAPTURED ON macOS</figcaption>
+        <figure class="hero-shot hero-art">
+          <img src="assets/sirius-living-constellation-v1.jpg" alt="Abstract living Sirius constellation linking independent local threads to a bounded memory and compute field" width="1672" height="941" />
+          <span class="signal signal-a" aria-hidden="true"></span><span class="signal signal-b" aria-hidden="true"></span>
+          <figcaption>ONE BRIGHT CORE // MANY INDEPENDENT STARS</figcaption>
         </figure>
       </section>
 
@@ -64,9 +66,31 @@
         </div>
       </section>
 
+      <section class="real-product section">
+        <div class="section-heading">
+          <p class="eyebrow">02 // THE REAL PRODUCT</p>
+          <h2>Abstract outside.<br /><em>Practical inside.</em></h2>
+          <p>The constellation is not a metaphor pasted onto a chat app. It is how Sirius organizes real project threads, local models, memory scopes, tools, and visible control boundaries.</p>
+        </div>
+        <figure class="product-frame">
+          <img src="assets/sirius-clean-desktop-beta.jpg" alt="Sirius running on macOS with a local project workspace" width="4200" height="2700" />
+          <figcaption><span>REAL APPLICATION CAPTURE</span><span>macOS · APPLE SILICON · LOCAL QWEN</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="elastic-story section">
+        <div class="elastic-copy">
+          <p class="eyebrow">03 // THE ELASTIC ENGINE</p>
+          <h2>The whole model can stay on storage.<br /><em>Only useful structure wakes up.</em></h2>
+          <p>Sirius treats a giant sparse model as addressable components. Routers select the experts required now; bounded storage reads materialize them into MLX; useful components remain warm until memory pressure asks them to leave.</p>
+          <div class="flow-line" aria-label="Elastic execution flow"><span>SSD</span><i></i><span>SELECT</span><i></i><span>MLX</span><i></i><span>REUSE</span></div>
+        </div>
+        <figure class="elastic-art"><img src="assets/sirius-elastic-engine-v1.jpg" alt="A vast dormant expert archive routing only a small selected set into a compact active compute chamber" width="1672" height="941" loading="lazy" /></figure>
+      </section>
+
       <section class="connections section" id="connections">
         <div class="section-heading">
-          <p class="eyebrow">02 // ONE LOCAL CREATIVE SYSTEM</p>
+          <p class="eyebrow">04 // ONE LOCAL CREATIVE SYSTEM</p>
           <h2>Sirius connects the work.<br /><em>Each app keeps ownership.</em></h2>
           <p>Sirius is the conversational surface. It sends typed, reviewable handoffs to the specialist app that owns the result—never an invisible cross-app mutation.</p>
         </div>
@@ -79,12 +103,13 @@
           <article><b>PXL FINANCE</b><span>Reviewed draft handoff</span><small>Owns financial records</small></article>
           <article><b>BROWSERCODE</b><span>Isolated web research</span><small>Explicit session control</small></article>
         </div>
+        <figure class="connection-art"><img src="assets/sirius-connected-world-v1.jpg" alt="Abstract Sirius star coordinating six independent creative systems through reversible luminous handoffs" width="1672" height="941" loading="lazy" /></figure>
       </section>
 
       <section class="control section" id="control">
         <figure class="control-shot"><img src="assets/sirius-clean-settings-beta.jpg" alt="Sirius Settings over a clean macOS Desktop showing fx Agent enabled and macOS Control disabled" width="4200" height="2700" /></figure>
         <div class="control-copy">
-          <p class="eyebrow">03 // EXPLICIT CONTROL</p>
+          <p class="eyebrow">05 // EXPLICIT CONTROL</p>
           <h2>Your Mac is not a hidden tool.</h2>
           <p>fx and macOS Control are separate switches. Enable the agent without handing it your Desktop, then grant Mac control only for the turns that truly need it.</p>
           <ul>
@@ -97,7 +122,7 @@
       </section>
 
       <section class="principles section">
-        <p class="eyebrow">04 // LOCAL BY DESIGN</p>
+        <p class="eyebrow">06 // LOCAL BY DESIGN</p>
         <div class="principle-grid">
           <h2>The model lives on your Mac. The workspace belongs to your project.</h2>
           <div><p>Sirius is built for people who want a capable AI collaborator without turning every thought into a cloud workflow.</p><p>Local inference, deliberate tools, recoverable state. The system stays understandable even as it becomes more powerful.</p></div>
@@ -124,5 +149,11 @@
       <a class="brand" href="#top"><img src="assets/sirius-icon.png" alt="" width="32" height="32" /><span><strong>SIRIUS</strong><small>PUBLIC BETA</small></span></a>
       <p>Made by Pixel Records Studio in Croatia.</p>
     </footer>
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => entry.target.classList.toggle("is-visible", entry.isIntersecting));
+      }, { threshold: 0.12 });
+      document.querySelectorAll(".section, .system-strip").forEach((node) => observer.observe(node));
+    </script>
   </body>
 </html>
