@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#05090c" />
-    <meta name="description" content="Sirius is a simple, powerful local AI workspace for Apple Silicon." />
+    <meta name="description" content="Sirius 0.6 is a private local AI workspace for Apple Silicon, with project threads, memory, browser tools, creative handoffs, and fast MLX inference." />
     <meta property="og:title" content="Sirius Beta // Local AI Workspace" />
     <meta property="og:description" content="Your Mac. Your models. One clear agent." />
     <meta property="og:image" content="https://tomislavrupic.github.io/Sirius-site/assets/sirius-clean-desktop-beta.jpg" />
@@ -22,61 +22,82 @@
         <img src="assets/sirius-icon.png" alt="" width="38" height="38" />
         <span><strong>SIRIUS</strong><small>PIXEL RECORDS LOCAL AI</small></span>
       </a>
-      <nav aria-label="Primary navigation"><a href="#inside">Inside</a><a href="#control">Control</a><a href="#download">Download</a></nav>
+      <nav aria-label="Primary navigation"><a href="#inside">Features</a><a href="#connections">Connections</a><a href="#control">Control</a><a href="#download">Download</a></nav>
       <a class="header-cta" href="#download">Get the beta</a>
     </header>
 
     <main id="main">
       <section class="hero" id="top">
         <div class="hero-copy">
-          <p class="eyebrow"><i></i> PUBLIC BETA // APPLE SILICON</p>
+          <p class="eyebrow"><i></i> 0.6 PUBLIC BETA // APPLE SILICON</p>
           <h1>Your Mac.<br /><em>Your models.</em><br />One clear agent.</h1>
-          <p class="lede">Sirius gives every project a persistent local AI workspace—with fast direct chat, focused fx execution, private memory, and optional Mac control when you choose it.</p>
+          <p class="lede">Sirius gives every project its own constellation of local AI threads—with fast Qwen inference, bounded memory, focused fx execution, and explicit control over tools.</p>
           <div class="hero-actions">
-            <a class="button primary" href="https://github.com/tomislavrupic/Sirius-site/releases/download/v0.5.3-beta.5/Sirius-0.5.3-beta.5-arm64.dmg"><span>Download Sirius Beta</span><small>0.5.3 · arm64</small></a>
+            <a class="button primary" href="https://github.com/tomislavrupic/Sirius-site/releases/download/v0.6.0-beta.1/Sirius-0.6.0-beta.1-arm64.dmg"><span>Download Sirius 0.6</span><small>Beta 1 · arm64</small></a>
             <a class="button quiet" href="#inside">See what is inside ↓</a>
           </div>
           <div class="trust"><span><b>LOCAL</b> MLX inference</span><span><b>PRIVATE</b> Project-scoped</span><span><b>CONTROL</b> Always optional</span></div>
         </div>
         <figure class="hero-shot">
           <img src="assets/sirius-clean-desktop-beta.jpg" alt="Sirius Beta running on a clean macOS Desktop with a local-first release conversation" width="4200" height="2700" />
-          <figcaption>THE REAL BETA // CAPTURED ON macOS</figcaption>
+          <figcaption>REAL SIRIUS UI // CAPTURED ON macOS</figcaption>
         </figure>
       </section>
 
       <section class="system-strip" aria-label="Sirius system overview">
-        <span><b>LOCAL</b> Qwen through MLX</span><span><b>FX</b> Power on demand</span><span><b>MAC</b> Explicit opt-in</span><span><b>FILES</b> Stay yours</span>
+        <span><b>LOCAL</b> Qwen through MLX Serve</span><span><b>STARS</b> Fresh project threads</span><span><b>MEMORY</b> Private or shared</span><span><b>TOOLS</b> Explicit opt-in</span>
       </section>
 
       <section class="inside section" id="inside">
         <div class="section-heading">
-          <p class="eyebrow">01 // THE OPERATING MODEL</p>
-          <h2>Simple first.<br /><em>Power when invited.</em></h2>
-          <p>Chat directly with your local model for everyday work. Turn on fx only when the task needs tools, files, or a longer execution loop.</p>
+          <p class="eyebrow">01 // WHAT SIRIUS DOES</p>
+          <h2>One project.<br /><em>Many fresh stars.</em></h2>
+          <p>Start a clean thread without losing the project. Keep it private, or let it share the useful memory and capabilities of its constellation.</p>
         </div>
         <div class="feature-grid">
-          <article><span>01</span><h3>Direct Qwen</h3><p>Fast, streaming conversation through Sirius-owned MLX infrastructure. No agent ceremony for a simple question.</p></article>
-          <article><span>02</span><h3>fx Agent</h3><p>A small, focused execution layer for real project work. Persistent enough to be useful, quiet enough to stay out of the way.</p></article>
-          <article><span>03</span><h3>Continuity</h3><p>Each workspace remembers its own context, files, and conversation. Search a selected ChatGPT archive or let Sirius keep its own approved local memory.</p></article>
+          <article><span>01</span><h3>Fast local Qwen</h3><p>Streaming Qwen 3.8 through MLX Serve on Apple Silicon, with model setup and runtime health owned by Sirius.</p></article>
+          <article><span>02</span><h3>Constellations</h3><p>Codex-style project threads. Create a new star for a fresh start, then choose whether its memory stays private or shared.</p></article>
+          <article><span>03</span><h3>Bounded memory</h3><p>KITKAT and your read-only ChatGPT archive provide cited context only when it is useful—without silently merging every thread.</p></article>
+          <article><span>04</span><h3>fx Agent</h3><p>Turn on workspace tools and longer execution only when the task needs them. Direct chat remains direct.</p></article>
+          <article><span>05</span><h3>Isolated browser</h3><p>Research in a Sirius-owned browser profile, separate from your personal browser state and enabled per session.</p></article>
+          <article><span>06</span><h3>Creative actions</h3><p>Turn a message into a Suno track brief, LTX video prompt, ALi render sequence, memory proposal, or reviewed finance draft.</p></article>
+        </div>
+      </section>
+
+      <section class="connections section" id="connections">
+        <div class="section-heading">
+          <p class="eyebrow">02 // ONE LOCAL CREATIVE SYSTEM</p>
+          <h2>Sirius connects the work.<br /><em>Each app keeps ownership.</em></h2>
+          <p>Sirius is the conversational surface. It sends typed, reviewable handoffs to the specialist app that owns the result—never an invisible cross-app mutation.</p>
+        </div>
+        <div class="orbit" aria-label="Sirius application connections">
+          <div class="orbit-core"><img src="assets/sirius-icon.png" alt="" /><b>SIRIUS</b><small>LOCAL ORCHESTRATION</small></div>
+          <article><b>KITKAT</b><span>Cited project memory</span><small>Reviewed, durable knowledge</small></article>
+          <article><b>MLX SERVE</b><span>Local model runtime</span><small>Fast Qwen inference</small></article>
+          <article><b>ALi IMAGINE</b><span>Visual render handoff</span><small>Owns queue and outputs</small></article>
+          <article><b>SUNO</b><span>Production-ready track brief</span><small>Copy-ready prompts and lyrics</small></article>
+          <article><b>PXL FINANCE</b><span>Reviewed draft handoff</span><small>Owns financial records</small></article>
+          <article><b>BROWSERCODE</b><span>Isolated web research</span><small>Explicit session control</small></article>
         </div>
       </section>
 
       <section class="control section" id="control">
-        <figure class="control-shot"><img src="assets/sirius-clean-settings-beta.jpg" alt="Sirius Settings over a clean macOS Desktop showing fx Agent enabled and macOS Control disabled" width="4200" height="2700" loading="lazy" /></figure>
+        <figure class="control-shot"><img src="assets/sirius-clean-settings-beta.jpg" alt="Sirius Settings over a clean macOS Desktop showing fx Agent enabled and macOS Control disabled" width="4200" height="2700" /></figure>
         <div class="control-copy">
-          <p class="eyebrow">02 // EXPLICIT CONTROL</p>
+          <p class="eyebrow">03 // EXPLICIT CONTROL</p>
           <h2>Your Mac is not a hidden tool.</h2>
           <p>fx and macOS Control are separate switches. Enable the agent without handing it your Desktop, then grant Mac control only for the turns that truly need it.</p>
           <ul>
             <li><b>fx Agent</b><span>Workspace tools and managed execution</span></li>
             <li><b>macOS Control</b><span>Off by default, visible when enabled</span></li>
-            <li><b>Web access</b><span>On demand with quoted context</span></li>
+            <li><b>Browser mode</b><span>Isolated and enabled per session</span></li>
+            <li><b>Memory scope</b><span>Private star or shared constellation</span></li>
           </ul>
         </div>
       </section>
 
       <section class="principles section">
-        <p class="eyebrow">03 // LOCAL BY DESIGN</p>
+        <p class="eyebrow">04 // LOCAL BY DESIGN</p>
         <div class="principle-grid">
           <h2>The model lives on your Mac. The workspace belongs to your project.</h2>
           <div><p>Sirius is built for people who want a capable AI collaborator without turning every thought into a cloud workflow.</p><p>Local inference, deliberate tools, recoverable state. The system stays understandable even as it becomes more powerful.</p></div>
@@ -84,17 +105,17 @@
       </section>
 
       <section class="download section" id="download">
-        <div><p class="eyebrow"><i></i> 0.5.3 BETA 5 // AVAILABLE NOW</p><h2>Try Sirius on<br /><em>Apple Silicon.</em></h2></div>
+        <div><p class="eyebrow"><i></i> 0.6.0 BETA 1 // AVAILABLE NOW</p><h2>Try Sirius on<br /><em>Apple Silicon.</em></h2></div>
         <div class="download-card">
           <dl>
-            <div><dt>Build</dt><dd>0.5.3 Beta 5 · 22</dd></div>
+            <div><dt>Build</dt><dd>0.6.0 Beta 1 · 26</dd></div>
             <div><dt>System</dt><dd>macOS 14+ · Apple Silicon</dd></div>
             <div><dt>Package</dt><dd>DMG · arm64 app</dd></div>
             <div><dt>Signing</dt><dd>Ad-hoc signed · not notarized</dd></div>
           </dl>
-          <a class="button primary wide" href="https://github.com/tomislavrupic/Sirius-site/releases/download/v0.5.3-beta.5/Sirius-0.5.3-beta.5-arm64.dmg"><span>Download the DMG</span><small>6.0 MB</small></a>
+          <a class="button primary wide" href="https://github.com/tomislavrupic/Sirius-site/releases/download/v0.6.0-beta.1/Sirius-0.6.0-beta.1-arm64.dmg"><span>Download the DMG</span><small>40.2 MB</small></a>
           <p class="install-note"><b>First launch:</b> right-click Sirius and choose Open. The beta is not notarized yet. Sirius will guide you through local runtime and model setup.</p>
-          <a class="release-link" href="https://github.com/tomislavrupic/Sirius-site/releases/tag/v0.5.3-beta.5">Release notes and SHA-256 →</a>
+          <a class="release-link" href="https://github.com/tomislavrupic/Sirius-site/releases/tag/v0.6.0-beta.1">Release notes and SHA-256 →</a>
         </div>
       </section>
     </main>
