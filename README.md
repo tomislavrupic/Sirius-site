@@ -1,9 +1,9 @@
 # Sirius Beta landing page
 
-Static GitHub Pages site for Sirius 0.6.8 Beta 1 (build 52).
+Static GitHub Pages site for Sirius 0.6.9 Beta 1 (build 53).
 
 - Page: https://tomislavrupic.github.io/Sirius-site/
-- Release: https://github.com/tomislavrupic/Sirius-site/releases/tag/v0.6.8-beta.1
+- Release: https://github.com/tomislavrupic/Sirius-site/releases/tag/v0.6.9-beta.1
 
 ## Media
 
